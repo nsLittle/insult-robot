@@ -1,7 +1,8 @@
 'use client';
 import React, { useEffect, useState } from "react";
 
-const Insults = () => {
+
+export const Insults = () => {
   const [insult, setInsult] = useState('');
 
   useEffect(() => {
@@ -19,9 +20,6 @@ const Insults = () => {
       }
     })
     .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
       return response.json();
     })
     .then(data => setInsult(data.joke))
@@ -29,16 +27,7 @@ const Insults = () => {
     .catch(error => console.error('Error fetching insult/joke', error));
   }, []);
 
-  console.log(insult);
-
-
   return (
-    <>
-      <p>
-        {insult}
-      </p>
-    </>
-  );
+    <div><p>{insult}</p></div>
+  )
 };
-
-export default Insults;

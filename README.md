@@ -1,37 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Insult Robot
 
-## Getting Started
+This project was created by Mutsumi Hata, a student at Parsity, an online engineering program. The work in this repository is wholly of the student based on a prompt to build a React/Redux application using APIs.
 
-First, run the development server:
+If you have any questions about this project or the program in general, visit [parsity.io](https://parsity.io/) or email hello@parsity.io.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Project Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This simple React application takes two free APIs to generate a robot that hurls uniquely lame dad jokes. The project started as a insult hurling robot, but this project gave me the opportunity to encoutner CORS policy issues with APIs. I learned that I could circumnavigate this issue by either (a) using a browser extension, (b) building a backend API on my end to mediate between user's browser and the free insult generating API. I chose a simpler solution of finding another API without the CORS issue. A dad joke generating API. It doesn't have the ^&\*() I was looking for, but it will suffice for this particular project.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Table of Contents
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Insult-Robot
 
-## Learn More
+- app
+  - components
+    - insults.js
+    - robot.js
+  - globals.css
+  - layout.js
+  - page.js
+- README.md
 
-To learn more about Next.js, take a look at the following resources:
+### How to Run Application
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Open terminal
+2. Locate file: rtk-weather
+3. Type: npm run dev
+4. Type: open http://localhost:3000 (or other appropriate host)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Things to Add/Edit
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# robot-insult-hurler
+1. Convert app to Redux to proactice Redux syntax
+2. Use browser extension to bypass CORS issue
